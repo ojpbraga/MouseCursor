@@ -1,0 +1,133 @@
+:root {
+    --font-family: arial;
+    --gradiente-bg: linear-gradient(54deg, rgba(43,12,72,1) 15%, rgba(86,65,98,1) 66%, rgba(20,107,82,1) 100%);
+    --botao-nav: #7400a27a;
+    --botao-nav-border: #2f144a;
+    --curso-nome: rgba(255, 255, 255, 0.73);
+}
+
+/* Globalização (formatação) */
+* {
+    margin: 0px;
+    font-family: var(--font-family);
+}
+
+body {
+    background: var(--gradiente-bg);
+    background-size: 100% 1%; 
+    animation: animation-gradient 2s 10s infinite alternate;
+    
+}
+
+
+h1 {
+    margin: 0px;
+}
+nav li{
+    list-style: none;
+}
+nav li a {
+    text-decoration: none;
+    color: inherit;
+}
+/* Fim globalização */
+
+/* Header */
+#header-bg {
+    background: rgba(0, 0, 0, 0.2);
+}
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 1200px;
+    padding: 20px 10px;
+}
+h1 {
+    /* Rever onde as colors devem ficar */
+    color: #E7D8F7;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+}
+
+#link-nav {
+    display: flex;
+    gap: 20px;
+}
+#link-nav li a {
+    color: #d3d3d3bd;
+    letter-spacing: 0.09rem;
+    padding: 5px 30px;
+    background: var(--botao-nav);
+    border: 2px solid var(--botao-nav-border);
+    border-radius: 7px;
+    font-weight: bold;
+}
+#link-nav li a:hover {
+    /* Resolver problema q */
+    border: 2px solid #fff;
+    color: #fff;
+    transition: 0.4s;
+}
+/* Fim header */
+
+
+
+/* Conteudo principal */
+#conteudo-principal {
+    display: flex;
+    height: 70vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+#titulo {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 5.5rem;
+    letter-spacing: 2rem;
+}
+#titulo span {
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 0.1vw #fff;
+}
+
+/* Opção de cursor */
+#opcoes-mouse {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    justify-content: space-between;
+    
+}
+.cursores {
+    display: flex;
+    width: 7rem;
+    justify-content: space-between;
+    padding: 5px 20px;
+    border-radius: 7px;
+    align-items: center;
+    cursor: pointer;
+}
+.cursores p {
+    color: var(--curso-nome);
+    font-size: 1rem;
+    font-weight: bold;
+}
+.cursores img {
+    height: 2rem;
+}
+#marvel {
+    background: #ff5d5d;
+}
+#minecraft {
+    background: #ffb868;
+}
+#saitama {
+    background: #93a21f;
+}
+#mickey {
+    background: #248cb2;
+}
